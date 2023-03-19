@@ -8,17 +8,17 @@
 
 int main(void)
 {
-	int num;
+	char alpha = 'a';
+	int i;
 
-	for (num = 0; num <  10; num++)
+	for (i = 0; i <  10; i++)
 	{
-		putchar(48 + (num % 10)); /** 48 is the ASCII code for 0 */
+		putchar(48 + i);
+	}
 
-		if (num != 9)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+	while (alpha <= 'f')
+	{
+		putchar(alpha++);
 	}
 
 	putchar('\n');
