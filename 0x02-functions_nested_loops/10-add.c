@@ -19,16 +19,3 @@ int add(int a, int b)
 
 	return (result);
 }
-
-
-i = 0;
-	while (i <= 9)
-	{
-		for (c = 'a'; c <= 'z'; c++)
-		{
-			_putchar(c);
-		}
-		i++;
-		_putchar('\n');
-	}
-}
