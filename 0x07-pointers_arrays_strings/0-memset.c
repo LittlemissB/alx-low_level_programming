@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* *_memeset - fills memory area with constant byte
+*_memeset - fills memory area with constant byte.
 *@s: address to memory area
 *@b: the char to be used
 *@n: number of bytes to the memory area
