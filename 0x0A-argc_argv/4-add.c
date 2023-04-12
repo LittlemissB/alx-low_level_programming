@@ -8,7 +8,7 @@
  * @argv: array of argument
  * Description: if no number is passed to program, print o.
  * if one of the numbers contain non digits, print error.
- * Return: 1 if error, if function runs properly.
+ * Return: 1 if error, 0 if  function runs properly.
  */
 
 int main(int argc, char *argv[])
