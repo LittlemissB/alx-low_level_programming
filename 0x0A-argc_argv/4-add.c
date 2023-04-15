@@ -14,12 +14,13 @@
 int main(int argc, char const *argv[])
 {
 	int sum = 0, i = 1, j;
+
 	while (i < argc)
 	{
 		int str_len = strlen(argv[i]);
 
 		for (j = 0; j < str_len; j++)
-		{ 
+		{
 			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
 				printf("Error\n");
