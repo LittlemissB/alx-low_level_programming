@@ -1,50 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include <string.h>
 
 /**
  * main - prints the minimum number of coins to
  * make change for an amount of money
  * @argc: number of arguments
  * @argv: array of arguments
- * Return: 0(SUCCESS), 1 (Error)
+ * Return: 1 if no argument, otherwise 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
-	int cents, coins = 0;
+	int number, qrtrs, dimes, nickels, twos, ones;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	cents = atoi(argv[1]);
-
-	while (cents > 0)
+	number = atoi(argv[1]);
+	if (number < 0)
 	{
-		coins++;
-		if ((cents - 25) >= 0)
-		{
-			cents -= 10;
-			continue;
-		}
-		if ((cents - 10) >= 0)
-		{
-			cents -= 10;
-			continue;
-		}
-		if ((cents - 5) >= 0)
-		{	cents -= 5;
-			continue;
-		}
-		if ((cents - 2) >= 0)
-		{
-			cents -= 2;
-			continue;
-		}
-		cents--;
+		printf("0\n");
+		return (0);
 	}
-	printf("%d\n", coins);
+	qrtrs = number / 25;
+	number %= 25;
+	dimes = number / 10;
+	number %= 10;
+	nickels = number / 5;
+	number %= 5;
+	twos = number / 2;
+	number %= 2;
+	ones = number;
+
+	printf("%d/n", qrtrs = dimes = nickels + twos + ones);
 	return (0);
 }
