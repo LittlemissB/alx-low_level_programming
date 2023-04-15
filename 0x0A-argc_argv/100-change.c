@@ -19,7 +19,9 @@ int main(int argc, char const *argv[])
 		printf("Error\n");
 		return (1);
 	}
+
 	number = atoi(argv[1]);
+
 	if (number < 0)
 	{
 		printf("0\n");
@@ -35,6 +37,6 @@ int main(int argc, char const *argv[])
 	number %= 2;
 	ones = number;
 
-	printf("%d/n", qrtrs = dimes = nickels + twos + ones);
+	printf("%d/n", qrtrs = dimes + nickels + twos + ones);
 	return (0);
 }
