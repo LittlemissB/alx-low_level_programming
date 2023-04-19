@@ -1,7 +1,7 @@
-#include "function_pointers.h"
+#include <stdio.h>
 
-/*
- * int_index -Searches for an integer via cmp function
+/**
+ * int_index - Searches for an integer via cmp function
  * @array: Array to search in
  * @size: Size of the array
  * @cmp: Pointer to the comparing function
