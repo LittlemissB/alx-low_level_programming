@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * append_text_to_fike - Append text to file
+ * append_text_to_file - Append text to file
  *
  * @filename: File to append
  * @text_content: Content to append to file
